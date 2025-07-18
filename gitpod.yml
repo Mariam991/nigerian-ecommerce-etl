@@ -1,0 +1,26 @@
+tasks:
+  - name: Setup Environment
+    init: |
+      sudo apt-get update
+      sudo apt-get install -y postgresql postgresql-contrib
+      pip install pandas numpy matplotlib seaborn plotly psycopg2-binary sqlalchemy jupyter notebook kaggle python-dotenv
+      sudo service postgresql start
+      sudo -u postgres psql -c "CREATE DATABASE nigerian_ecommerce;"
+      sudo -u postgres psql -c "CREATE USER gitpod WITH PASSWORD 'gitpod123';"
+      sudo -u postgres psql -c "GRANT ALL PRIVILEGES ON DATABASE nigerian_ecommerce TO gitpod;"
+      echo "✅ Environment setup complete!"
+    command: |
+      echo "🚀 Welcome to Nigerian E-commerce ETL Project!"
+      echo "📂 Your workspace is ready!"
+
+vscode:
+  extensions:
+    - ms-python.python
+    - ms-python.pylint
+    - ms-toolsai.jupyter
+
+ports:
+  - port: 8888
+    onOpen: open-preview
+  - port: 5432
+    onOpen: ignore
