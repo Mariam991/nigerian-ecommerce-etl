@@ -1,0 +1,32 @@
+# Nigerian E-commerce ETL & Analytics Pipeline
+
+##  Project Overview
+A comprehensive data analysis pipeline for Nigerian e-commerce sales data, built to extract business insights and support data-driven decision making.
+
+##  Key Features
+- **Data Processing**: Automated extraction and transformation of sales data
+- **Business Analytics**: Revenue analysis across products and Nigerian states
+- **Geographic Insights**: Sales performance by Lagos, Abuja, Kano, Port Harcourt, Ibadan
+- **Product Performance**: Analysis of phones, laptops, tablets, and accessories
+
+##  Key Results
+- **Total Revenue Analysis**: ₦1,375,000 across 6 product categories
+- **Top Performer**: Power Bank (25 units sold)
+- **Premium Products**: Laptops (₦150,000) and Phones (₦50,000)
+- **Geographic Leaders**: Lagos and Abuja markets
+
+##  Technologies Used
+- **Python**: Data processing and analysis
+- **Pandas**: Data manipulation (ready for implementation)
+- **Business Intelligence**: KPI calculation and reporting
+- **Git/GitHub**: Version control and collaboration
+
+## Business Impact
+- Identified top-performing products for inventory optimization
+- Analyzed geographic distribution for targeted marketing
+- Calculated revenue metrics for business planning
+- Created automated reporting pipeline
+
+##  How to Run
+```bash
+python3 final_analysis.py
